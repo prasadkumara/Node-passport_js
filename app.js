@@ -18,7 +18,7 @@ require('./config/passport')(passport);
 
 
 // Connect to MongoDB
-mongoose.connect('mongodb://janaka123:janaka123@imind-shard-00-00-ehl5k.mongodb.net:27017,imind-shard-00-01-ehl5k.mongodb.net:27017,imind-shard-00-02-ehl5k.mongodb.net:27017/iMind?ssl=true&replicaSet=iMind-shard-0&authSource=admin&retryWrites=true&w=majority', {
+mongoose.connect('<mongodb connection string>', {
     useNewUrlParser: true
 }, function (err) {
     if (err) {
